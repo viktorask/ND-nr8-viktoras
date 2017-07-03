@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 0;
+  font-family: "Amatic SC", sans-serif;
+}
+
+#navbar {
+  top: 0;
+  position: fixed;
+  width: 100%;
+}
+
+#navbar1 {
+  color: #fff;
+  background-color: #000;
+  display: inline-block;
+  font-size: 24px;
+  opacity: 0.60;
+  overflow: hidden;
+  width: 100%;
+
+  a {
+    padding: 8px 16px;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+  }
+
+  a:hover {
+    background-color: lightgrey;
+    color: black;
+
+  }
+}
+
+#navbar1:hover {
+  background-color: black;
+
+}
+
+header {
+
+  background-size: cover;
+  background-image: url("pictures/pizza.jpg");
+  min-height: 90%;
+  filter: grayscale(50%);
+  position: relative;
+
+  #openfrom {
+    padding: 8px 16px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    h3 {
+      font-size: 24px;
+      background-color: #000;
+      color: #fff;
+      display: inline-block;
+      padding-left: 8px;
+      padding-right: 8px;
+      text-align: center;
+      margin: 0;
+    }
+  }
+}
+
+#letmeseemenu {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  h1 {
+    font-size: 60px;
+    color: #fff;
+    text-align: center
+  }
+
+  a {
+    color: #fff;
+    background-color: #000;
+    font-size: 36px;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  a:hover {
+    background-color: lightgrey;
+    color: black;
+  }
+}
+
+footer {
+  min-height: 90%;
+  color: #fff;
+  background-color: #000;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  text-align: center;
+  font-size: 36px;
+  clear: both;
+
+
+  h1 {
+    margin: 36px 0;
+  }
+}
+
+
+
+
+
+
