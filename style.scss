@@ -4,7 +4,6 @@
 
 html, body {
   height: 100%;
-  overflow: hidden;
   font-size: 15px;
   line-height: 1.5;
   margin: 0;
@@ -14,7 +13,9 @@ html, body {
 #navbar {
   top: 0;
   position: fixed;
-  width: 100%;
+  display: none;
+  padding: 0;
+
 }
 
 #navbar1 {
@@ -25,6 +26,7 @@ html, body {
   opacity: 0.60;
   overflow: hidden;
   width: 100%;
+  padding: 8px 0;
 
   a {
     padding: 8px 16px;
@@ -41,7 +43,7 @@ html, body {
   }
 }
 
-#navbar1:hover {
+#navbar:hover {
   background-color: black;
 
 }
@@ -83,7 +85,8 @@ header {
   h1 {
     font-size: 60px;
     color: #fff;
-    text-align: center
+    text-align: center;
+
   }
 
   a {
@@ -102,7 +105,7 @@ header {
 }
 
 footer {
-  min-height: 90%;
+
   color: #fff;
   background-color: #000;
   padding-top: 48px;
@@ -111,14 +114,264 @@ footer {
   font-size: 36px;
   clear: both;
 
-
-  h1 {
+  p {
     margin: 36px 0;
+
+    a {
+      color: inherit;
+    }
+  }
+  a:hover {
+    color: green;
   }
 }
 
+#themenu {
+  color: #fff;
+  background-color: #000;
+  padding: 64px 16px;
+  font-size: 36px;
+
+  div {
+    max-width: 980px;
+    margin: auto;
+
+    h1 {
+
+      text-align: center;
+      font-size: 64px;
+      font-weight: 400;
+      margin: 10px 0 64px 0;
+    }
+
+    h2 {
+
+      font-size: 36px;
+      font-weight: bold;
+    }
+
+    p {
+      color: #757575;
+    }
+
+    #pss {
+      border: 1px solid #ccc;
+      text-align: center;
+      background-color: black;
+      padding: 0;
+
+      a {
+        padding: 12px 24px;
+        width: 100%;
+        text-decoration: none;
+        color: white;
+
+      }
+
+      #themenupizza {
+        background-color: indianred;
+      }
+
+      .themenuhover:hover {
+        background-color: indianred;
+      }
+    }
+    #menu {
+
+      color: #000;
+      background-color: #fff;
+      padding: 32px 16px;
+
+      .pizzaprice {
+        text-align: center;
+
+        h2 {
+          font-weight: 400;
+          color: #fff;
+          background-color: #616161;
+          padding-left: 8px;
+          padding-right: 8px;
+          border-radius: 4px;
 
 
+        }
+      }
+      .pizzaname {
+        text-align: center;
 
+        #hot {
+          font-weight: 400;
+          color: #fff;
+          background-color: red;
+          padding-left: 8px;
+          padding-right: 8px;
+          border-radius: 4px;
+        }
+
+        #new {
+          font-weight: 400;
+          color: #000;
+          background-color: #bbb;
+          padding-left: 8px;
+          padding-right: 8px;
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+}
+
+#about {
+  color: #fff;
+  background-color: #f44336;
+  padding: 64px 16px;
+  font-size: 24px;
+  filter: grayscale(75%);
+
+  div {
+    max-width: 980px;
+    margin: auto;
+
+    h1 {
+      text-align: center;
+      font-size: 64px;
+      font-weight: 400;
+      margin: 10px 0 64px 0;
+    }
+
+    p {
+      img {
+        width: 150px;
+        float: right;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+#contact {
+  color: #fff;
+  background-color: #607d8b;
+  padding: 64px 16px;
+  font-size: 24px;
+  filter: grayscale(50%);
+
+  div {
+    max-width: 980px;
+    margin: auto;
+
+    h1 {
+      text-align: center;
+      font-size: 64px;
+      font-weight: 400;
+      margin: 10px 0 64px 0;
+    }
+    p {
+      span {
+
+        background-color: #000;
+        color: #fff;
+        padding-left: 8px;
+        padding-right: 8px;
+
+      }
+    }
+    #reserve {
+      font-size: 36px;
+    }
+
+    form {
+      input {
+        width: 100%;
+        border: 1px solid #ccc;
+        font: inherit;
+        margin: 0;
+        padding: 16px 8px;
+      }
+
+      button {
+        color: #000;
+        background-color: #f1f1f1;
+        width: 100%;
+        border: none;
+        padding: 8px 16px;
+        cursor: pointer;
+        font: inherit;
+        margin: 0;
+      }
+
+      button:hover {
+        background-color: lightgrey;
+
+      }
+    }
+  }
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  float: left;
+  padding: 0;
+  width: 100%;
+
+}
+
+/* For desktop: */
+@media only screen and (min-width: 600px) {
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+  #navbar {
+    display: block;
+  }
+  #letmeseemenu h1 {
+    font-size: 100px;
+    font-weight: lighter;
+  }
+  .pizzaname {
+    text-align: left !important;
+  }
+  .pizzaprice {
+    text-align: right !important;
+  }
+  .pizzaprice h2 {
+    width: 25%;
+    float: right;
+    text-align: center;
+  }
+}
 
 
