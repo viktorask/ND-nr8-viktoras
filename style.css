@@ -175,6 +175,8 @@ footer {
       width: 150px;
       float: right;
       border-radius: 50%; }
+    #about div img {
+      margin: 16px 0; }
 
 #contact {
   color: #fff;
